@@ -41,3 +41,6 @@ print('####################################################')
 print('####################################################')
 
 print(df_corporate_events)
+
+df_articles.to_csv('article.csv', sep=',')
+df_articles.to_csv('corporate-events.csv', sep=',')
