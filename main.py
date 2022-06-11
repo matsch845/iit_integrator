@@ -3,6 +3,8 @@ from elasticsearch import Elasticsearch, RequestsHttpConnection
 from elasticsearch.helpers import scan
 import pandas as pd
 
+from matcher_strict import start_matching
+
 es = Elasticsearch(['localhost:9200'])
 
 es.info()
@@ -33,7 +35,7 @@ def get_data_from_elastic(table_name):
     return df
 
 df_articles = get_data_from_elastic('article')
-df_corporate_events = get_data_from_elastic('corporate-events')
+df_corporate_events = get_data_from_elastic('corporate-events-full')
 
 print(df_articles)
 
@@ -42,5 +44,4 @@ print('####################################################')
 
 print(df_corporate_events)
 
-df_articles.to_csv('article.csv', sep=',')
-df_articles.to_csv('corporate-events.csv', sep=',')
+start_matching(df_articles, df_corporate_events)
