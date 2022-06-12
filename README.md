@@ -1,7 +1,7 @@
 # integrator
 
 ## general architecture
-Step 0: we imported the huge crawl set of RB into elastic via incorporate-event-import.py, so we got 7 mio entries of those now.
+Step 0: we imported the crawl set of RB into elastic via incorporate-event-import.py
 
 After that main.py retrieves our google news data and the RB data from elastic search and runs our matcher (integrator "matcher_strict")
 
