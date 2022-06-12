@@ -1,9 +1,12 @@
-# integrator
+# IIT-Integrator
 
-## general architecture
-Step 0: we imported the crawl set of RB into elastic via incorporate-event-import.py
+## Import corporate-events-dump
+1. Get the corporate-events-dump (RB dataset) as discussed in slack
+2. Run `python corporate-event-import` to import the dataset into elastic search
 
-After that main.py retrieves our google news data and the RB data from elastic search and runs our matcher (integrator "matcher_strict")
+## General Architecture and Functionality
+
+After importing the corporate-events-dump, main.py retrieves our google news data and the RB data from elastic search and runs our matcher (integrator "matcher_strict")
 
 The integrator works this way:
 1. It takes the information of RB crawl and finds the company in the string via regex. (depending on where the company is written)
@@ -19,7 +22,7 @@ We choose a threshold wich will lead to some arbitrary matches but we can filter
 In case of short company strings the matcher will have some issues, and maybe think there is a match when there is not. For those cases the confidence score got introduced, and will be used for further analysis.
 
 
-## how2run
+## How2Run (without importing the corporate-event-dump)
 1. `cd iit_integrator`
 2. `pip install .`
 3. `python main.py`
