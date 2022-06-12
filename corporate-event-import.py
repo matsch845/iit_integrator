@@ -1,9 +1,9 @@
 import json
 import pandas as pd
-from elasticsearch import Elasticsearch, RequestsHttpConnection
-from elasticsearch.helpers import scan
 
-es = Elasticsearch(['localhost:9200'])
+from elasticsearch7 import Elasticsearch
+
+es = Elasticsearch(['http://localhost:9200'])
 
 chunks = pd.read_json("corporate-events-dump", lines=True, chunksize=10000)
 
