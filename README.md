@@ -20,4 +20,6 @@ In case of short company strings the matcher will have some issues, and maybe th
 
 
 ## how2run
-1. `python main.py`
+1. `cd iit_integrator`
+2. `pip install .`
+3. `python main.py`
