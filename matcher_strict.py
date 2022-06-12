@@ -4,7 +4,7 @@ from fuzzywuzzy import fuzz
 from nltk import ngrams
 import pandas as pd
 from Levenshtein import distance as levenshtein_distance
-from elasticsearch import Elasticsearch, RequestsHttpConnection
+from elasticsearch7 import Elasticsearch
 es = Elasticsearch(['localhost:9200'])
 
 
@@ -29,6 +29,10 @@ def find_company(inp):
     start = inp.find(":")
     end = inp.find(",")
     company = inp[start+2:end]
+
+    if(len(company) == 0):
+        company = inp[0:inp.find(",")]
+
     return company
 
 
@@ -60,7 +64,7 @@ def start_matching(df_news, df_rb):
 
         # for u in range(len(df_news)): for testing only 100:
         # CHANGE THIS FOR PR
-        for u in range(1000):
+        for u in range(len(df_news)):
             news_link = df_news["link"][u]
             news_id = df_news["id"][u]
             news_publication_date = df_news["publication_date"][u]
@@ -85,9 +89,9 @@ def start_matching(df_news, df_rb):
 
             print(check)
 
-            threshold_set = 75
-            threshold_sort = 75
-            threshold_leven = 10
+            threshold_set = 50
+            threshold_sort = 50
+            threshold_leven = 15
 
             for item in check:
                 distance_set = fuzz.token_set_ratio(item, company)
