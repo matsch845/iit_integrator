@@ -1,6 +1,6 @@
 from datetime import datetime
-from elasticsearch import Elasticsearch, RequestsHttpConnection
-from elasticsearch.helpers import scan
+from elasticsearch7 import Elasticsearch
+from elasticsearch7.helpers import scan
 import pandas as pd
 
 from matcher_strict import start_matching

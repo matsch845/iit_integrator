@@ -4,7 +4,7 @@ from fuzzywuzzy import fuzz
 from nltk import ngrams
 import pandas as pd
 from Levenshtein import distance as levenshtein_distance
-from elasticsearch import Elasticsearch, RequestsHttpConnection
+from elasticsearch7 import Elasticsearch
 es = Elasticsearch(['localhost:9200'])
 
 
@@ -30,7 +30,7 @@ def find_company(inp):
     end = inp.find(",")
     company = inp[start+2:end]
 
-    if len(company) == 0:
+    if(len(company) == 0):
         company = inp[0:inp.find(",")]
 
     return company
@@ -74,6 +74,7 @@ def start_matching(df_news, df_rb):
             news_search_url = df_news["search_url"][u]
             title = df_news["title"][u]
             title = clean_it(title)
+            print(title)
 
             check_grams = []
             n = n_gram_amount
@@ -86,13 +87,11 @@ def start_matching(df_news, df_rb):
             for item in check_grams:
                 check.append(' '.join(item))
 
-            print(title)
-            print(company)
             print(check)
 
-            threshold_set = 75
-            threshold_sort = 75
-            threshold_leven = 10
+            threshold_set = 50
+            threshold_sort = 50
+            threshold_leven = 15
 
             for item in check:
                 distance_set = fuzz.token_set_ratio(item, company)
@@ -103,7 +102,7 @@ def start_matching(df_news, df_rb):
                     print("'" + item + "' matched with: '" + company + "'")
 
                     confidence_level = (1/leven_dist * (distance_set + distance_sort)) / (200)
-
+                    
                     es.index(
                         index='integrated-dataset',
                         body={

@@ -1,0 +1,278 @@
+{
+	"took": 212,
+	"timed_out": false,
+	"_shards": {
+		"total": 1,
+		"successful": 1,
+		"skipped": 0,
+		"failed": 0
+	},
+	"hits": {
+		"total": {
+			"value": 10000,
+			"relation": "gte"
+		},
+		"max_score": 1.0,
+		"hits": [
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "o0LnV4EBg3Pfh2aMzxxX",
+				"_score": 1.0,
+				"_source": {
+					"unique_rb_news": "be_557799CBMiLWh0dHBzOi8vd3d3LnByZXNzZXBvcnRhbC5kZS9wbS8xNjM0ODYvNTI0MDc5OdIBMWh0dHBzOi8vd3d3LnByZXNzZXBvcnRhbC5kZS9wbS9hbXAvMTYzNDg2LzUyNDA3OTk",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.presseportal.de/pm/163486/5240799",
+					"news_id": "CBMiLWh0dHBzOi8vd3d3LnByZXNzZXBvcnRhbC5kZS9wbS8xNjM0ODYvNTI0MDc5OdIBMWh0dHBzOi8vd3d3LnByZXNzZXBvcnRhbC5kZS9wbS9hbXAvMTYzNDg2LzUyNDA3OTk",
+					"news_publication_date": "Tue, 07 Jun 2022 07:59:29 GMT",
+					"news_description": "<a href=\"https://www.presseportal.de/pm/163486/5240799\" target=\"_blank\">ESH Examensvorbereitung GmbH nimmt neue Dimensionen an: Hamburger Unternehmen wächst weiter und sucht 10...</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Presseportal.de</font>",
+					"news_source": "Presseportal.de",
+					"news_search_keyword": "Unternehmen",
+					"news_search_url": "https://news.google.com/rss/search?q=Unternehmen+after:2022-06-07+before:2022-06-08&ceid=DE:de&hl=de&gl=DE",
+					"title": "esh examensvorbereitung gmbh nimmt neue dimensionen an hamburger unternehmen wächst weiter und sucht 10 presseportal de",
+					"confidence_level": 0.05818181818181818
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "pELnV4EBg3Pfh2aMzxzw",
+				"_score": 1.0,
+				"_source": {
+					"unique_rb_news": "be_557799CBMiYGh0dHBzOi8vd3d3LmJhZGlzY2hlLXplaXR1bmcuZGUvZWluLXdlaXRlcmVyLXRvZGVzZmFsbC1taXQtY292aWQtMTktaW0tbGFuZGtyZWlzLS0yMTM2NjI3MDcuaHRtbNIBAA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.badische-zeitung.de/ein-weiterer-todesfall-mit-covid-19-im-landkreis--213662707.html",
+					"news_id": "CBMiYGh0dHBzOi8vd3d3LmJhZGlzY2hlLXplaXR1bmcuZGUvZWluLXdlaXRlcmVyLXRvZGVzZmFsbC1taXQtY292aWQtMTktaW0tbGFuZGtyZWlzLS0yMTM2NjI3MDcuaHRtbNIBAA",
+					"news_publication_date": "Tue, 07 Jun 2022 20:22:15 GMT",
+					"news_description": "<a href=\"https://www.badische-zeitung.de/ein-weiterer-todesfall-mit-covid-19-im-landkreis--213662707.html\" target=\"_blank\">Ein weiterer Todesfall mit Covid-19 im Landkreis - Kreis Lörrach</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Badische Zeitung</font>",
+					"news_source": "Badische Zeitung",
+					"news_search_keyword": "Covid",
+					"news_search_url": "https://news.google.com/rss/search?q=Covid+after:2022-06-07+before:2022-06-08&ceid=DE:de&hl=de&gl=DE",
+					"title": "ein weiterer todesfall mit covid 19 im landkreis kreis lörrach badische zeitung",
+					"confidence_level": 0.04166666666666666
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "pULnV4EBg3Pfh2aM0Bx5",
+				"_score": 1.0,
+				"_ignored": [
+					"news_id.keyword",
+					"unique_rb_news.keyword",
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMiyQFodHRwczovL3d3dy5lZS1uZXdzLmNoL2RlL2FydGljbGUvNDg3OTYvZXhwb3J0aW5pdGlhdGl2ZS1lbmVyZ2llLXNvbGFyZS1zdHJvbXZlcnNvcmd1bmctdHJpbmt3YXNzZXJhdWZiZXJlaXR1bmctdW5kLWt1aGx1bmctaW4tZWluZW0tcmVmZXJlbnphbmxhZ2UtaW4tbmV0emZlcm5lci1nZW1laW5kZS1pbS1zZW5lZ2FsLWluLWJldHJpZWItZ2Vub21tZW7SAQA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.ee-news.ch/de/article/48796/exportinitiative-energie-solare-stromversorgung-trinkwasseraufbereitung-und-kuhlung-in-einem-referenzanlage-in-netzferner-gemeinde-im-senegal-in-betrieb-genommen",
+					"news_id": "CBMiyQFodHRwczovL3d3dy5lZS1uZXdzLmNoL2RlL2FydGljbGUvNDg3OTYvZXhwb3J0aW5pdGlhdGl2ZS1lbmVyZ2llLXNvbGFyZS1zdHJvbXZlcnNvcmd1bmctdHJpbmt3YXNzZXJhdWZiZXJlaXR1bmctdW5kLWt1aGx1bmctaW4tZWluZW0tcmVmZXJlbnphbmxhZ2UtaW4tbmV0emZlcm5lci1nZW1laW5kZS1pbS1zZW5lZ2FsLWluLWJldHJpZWItZ2Vub21tZW7SAQA",
+					"news_publication_date": "Tue, 07 Jun 2022 07:43:53 GMT",
+					"news_description": "<a href=\"https://www.ee-news.ch/de/article/48796/exportinitiative-energie-solare-stromversorgung-trinkwasseraufbereitung-und-kuhlung-in-einem-referenzanlage-in-netzferner-gemeinde-im-senegal-in-betrieb-genommen\" target=\"_blank\">Exportinitiative Energie: Solare Stromversorgung, Trinkwasseraufbereitung und Kühlung in einem – Referenzanlage in netzferner Gemeinde im Senegal in Betrieb genommen (ee-news.ch)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ee-news - Die Newsplattform für erneuerbare Energien</font>",
+					"news_source": "ee-news - Die Newsplattform für erneuerbare Energien",
+					"news_search_keyword": "Betrieb",
+					"news_search_url": "https://news.google.com/rss/search?q=Betrieb+after:2022-06-07+before:2022-06-08&ceid=DE:de&hl=de&gl=DE",
+					"title": "exportinitiative energie solare stromversorgung trinkwasseraufbereitung und kühlung in einem referenzanlage in netzferner gemeinde im senegal in betrieb genommen ee news ch ee news die newsplattform für erneuerbare energien",
+					"confidence_level": 0.057777777777777778
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "pkLnV4EBg3Pfh2aM0RxA",
+				"_score": 1.0,
+				"_ignored": [
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMikgFodHRwczovL3d3dy5ib2Vyc2UtZXhwcmVzcy5jb20vbmV3cy9hcnRpY2xlcy9kZ2FwLW5ld3Mtc2FmLWhvbGxhbmQtZ2lidC1lbXBmb2hsZW5lcy1iYXJhbmdlYm90LWFuLWRpZS1ha3Rpb25hZXJlLXZvbi1oYWxkZXgtYmVrYW5udC1kZXV0c2NoLTQ1Njg3OdIBAA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.boerse-express.com/news/articles/dgap-news-saf-holland-gibt-empfohlenes-barangebot-an-die-aktionaere-von-haldex-bekannt-deutsch-456879",
+					"news_id": "CBMikgFodHRwczovL3d3dy5ib2Vyc2UtZXhwcmVzcy5jb20vbmV3cy9hcnRpY2xlcy9kZ2FwLW5ld3Mtc2FmLWhvbGxhbmQtZ2lidC1lbXBmb2hsZW5lcy1iYXJhbmdlYm90LWFuLWRpZS1ha3Rpb25hZXJlLXZvbi1oYWxkZXgtYmVrYW5udC1kZXV0c2NoLTQ1Njg3OdIBAA",
+					"news_publication_date": "Wed, 08 Jun 2022 05:18:00 GMT",
+					"news_description": "<a href=\"https://www.boerse-express.com/news/articles/dgap-news-saf-holland-gibt-empfohlenes-barangebot-an-die-aktionaere-von-haldex-bekannt-deutsch-456879\" target=\"_blank\">DGAP-News: SAF-HOLLAND gibt empfohlenes Barangebot an die Aktionäre von Haldex bekannt (deutsch)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Boerse-express.com</font>",
+					"news_source": "Boerse-express.com",
+					"news_search_keyword": "Aktionäre",
+					"news_search_url": "https://news.google.com/rss/search?q=Aktionäre+after:2022-06-07+before:2022-06-08&ceid=DE:de&hl=de&gl=DE",
+					"title": "dgap news saf holland gibt empfohlenes barangebot an die aktionäre von haldex bekannt deutsch boerse express com",
+					"confidence_level": 0.05555555555555555
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "p0LnV4EBg3Pfh2aM0RzB",
+				"_score": 1.0,
+				"_ignored": [
+					"news_id.keyword",
+					"unique_rb_news.keyword",
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMidWh0dHBzOi8vd3d3LndhbGxzdHJlZXQtb25saW5lLmRlL25hY2hyaWNodC8xNTU1MzE5My1vcmlnaW5hbC1yZXNlYXJjaC1lcndlLWltbW9iaWxpZW4tYWctdm9uLWdzYy1yZXNlYXJjaC1nbWJoLWthdWZlbtIBemh0dHBzOi8vd3d3LndhbGxzdHJlZXQtb25saW5lLmRlL19hbXAvbmFjaHJpY2h0LzE1NTUzMTkzLW9yaWdpbmFsLXJlc2VhcmNoLWVyd2UtaW1tb2JpbGllbi1hZy12b24tZ3NjLXJlc2VhcmNoLWdtYmgta2F1ZmVu",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.wallstreet-online.de/nachricht/15553193-original-research-erwe-immobilien-ag-von-gsc-research-gmbh-kaufen",
+					"news_id": "CBMidWh0dHBzOi8vd3d3LndhbGxzdHJlZXQtb25saW5lLmRlL25hY2hyaWNodC8xNTU1MzE5My1vcmlnaW5hbC1yZXNlYXJjaC1lcndlLWltbW9iaWxpZW4tYWctdm9uLWdzYy1yZXNlYXJjaC1nbWJoLWthdWZlbtIBemh0dHBzOi8vd3d3LndhbGxzdHJlZXQtb25saW5lLmRlL19hbXAvbmFjaHJpY2h0LzE1NTUzMTkzLW9yaWdpbmFsLXJlc2VhcmNoLWVyd2UtaW1tb2JpbGllbi1hZy12b24tZ3NjLXJlc2VhcmNoLWdtYmgta2F1ZmVu",
+					"news_publication_date": "Tue, 07 Jun 2022 08:58:29 GMT",
+					"news_description": "<a href=\"https://www.wallstreet-online.de/nachricht/15553193-original-research-erwe-immobilien-ag-von-gsc-research-gmbh-kaufen\" target=\"_blank\">ERWE Immobilien AG (von GSC Research GmbH): Kaufen Original-Research</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">wallstreet:online AG</font>",
+					"news_source": "wallstreet:online AG",
+					"news_search_keyword": "Aktionäre",
+					"news_search_url": "https://news.google.com/rss/search?q=Aktionäre+after:2022-06-07+before:2022-06-08&ceid=DE:de&hl=de&gl=DE",
+					"title": "erwe immobilien ag von gsc research gmbh kaufen original research wallstreet online ag",
+					"confidence_level": 0.05083333333333333
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "qELnV4EBg3Pfh2aM0xxT",
+				"_score": 1.0,
+				"_ignored": [
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMiamh0dHBzOi8vd3d3LnBucC5kZS9uYWNocmljaHRlbi9iYXllcm4vTWFya3VzLVNvZWRlci1EaWUtVWtyYWluZS1tdXNzLWFtLUVuZGUtZXJmb2xncmVpY2gtc2Vpbi00MzM4MTMwLmh0bWzSAQA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.pnp.de/nachrichten/bayern/Markus-Soeder-Die-Ukraine-muss-am-Ende-erfolgreich-sein-4338130.html",
+					"news_id": "CBMiamh0dHBzOi8vd3d3LnBucC5kZS9uYWNocmljaHRlbi9iYXllcm4vTWFya3VzLVNvZWRlci1EaWUtVWtyYWluZS1tdXNzLWFtLUVuZGUtZXJmb2xncmVpY2gtc2Vpbi00MzM4MTMwLmh0bWzSAQA",
+					"news_publication_date": "Tue, 07 Jun 2022 13:16:00 GMT",
+					"news_description": "<a href=\"https://www.pnp.de/nachrichten/bayern/Markus-Soeder-Die-Ukraine-muss-am-Ende-erfolgreich-sein-4338130.html\" target=\"_blank\">Markus Söder: \"Die Ukraine muss am Ende erfolgreich sein\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Passauer Neue Presse - PNP.de</font>",
+					"news_source": "Passauer Neue Presse - PNP.de",
+					"news_search_keyword": "Ukraine",
+					"news_search_url": "https://news.google.com/rss/search?q=Ukraine+after:2022-06-07+before:2022-06-08&ceid=DE:de&hl=de&gl=DE",
+					"title": "markus söder die ukraine muss am ende erfolgreich sein passauer neue presse pnp de",
+					"confidence_level": 0.04818181818181819
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "qULnV4EBg3Pfh2aM1RwB",
+				"_score": 1.0,
+				"_ignored": [
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMifGh0dHBzOi8vd3d3LmxpZ2FpbnNpZGVyLmRlL3JvYmVydC1sZXdhbmRvd3NraV8zNjYvZmMtYmF5ZXJuLW11ZW5jaGVuLWxld2FuZG93c2tpLWJlemllaHQtc3RlbGx1bmctenVtLXdlY2hzZWx0aGVhdGVyLTMyMTY1Ni_SAQA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.ligainsider.de/robert-lewandowski_366/fc-bayern-muenchen-lewandowski-bezieht-stellung-zum-wechseltheater-321656/",
+					"news_id": "CBMifGh0dHBzOi8vd3d3LmxpZ2FpbnNpZGVyLmRlL3JvYmVydC1sZXdhbmRvd3NraV8zNjYvZmMtYmF5ZXJuLW11ZW5jaGVuLWxld2FuZG93c2tpLWJlemllaHQtc3RlbGx1bmctenVtLXdlY2hzZWx0aGVhdGVyLTMyMTY1Ni_SAQA",
+					"news_publication_date": "Tue, 07 Jun 2022 18:00:00 GMT",
+					"news_description": "<a href=\"https://www.ligainsider.de/robert-lewandowski_366/fc-bayern-muenchen-lewandowski-bezieht-stellung-zum-wechseltheater-321656/\" target=\"_blank\">FC Bayern München: Lewandowski bezieht Stellung zum Wechseltheater</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">LigaInsider</font>",
+					"news_source": "LigaInsider",
+					"news_search_keyword": "Öl",
+					"news_search_url": "https://news.google.com/rss/search?q=Öl+after:2022-06-07+before:2022-06-08&ceid=DE:de&hl=de&gl=DE",
+					"title": "fc bayern münchen lewandowski bezieht stellung zum wechseltheater ligainsider",
+					"confidence_level": 0.04
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "qkLnV4EBg3Pfh2aM1xxE",
+				"_score": 1.0,
+				"_ignored": [
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMinQFodHRwczovL3d3dy5zdWVkZGV1dHNjaGUuZGUvd2lydHNjaGFmdC9pbW1vYmlsaWVuLXBhbmRlbWllLWRlc2lnbi1mdWVycy1oZXJ6LWRpZXNlLW1vZWJlbC13b2xsZW4tc2llLXVtYXJtZW4tZHBhLnVybi1uZXdzbWwtZHBhLWNvbS0yMDA5MDEwMS0yMjA2MDgtOTktNTg0OTU30gEA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.sueddeutsche.de/wirtschaft/immobilien-pandemie-design-fuers-herz-diese-moebel-wollen-sie-umarmen-dpa.urn-newsml-dpa-com-20090101-220608-99-584957",
+					"news_id": "CBMinQFodHRwczovL3d3dy5zdWVkZGV1dHNjaGUuZGUvd2lydHNjaGFmdC9pbW1vYmlsaWVuLXBhbmRlbWllLWRlc2lnbi1mdWVycy1oZXJ6LWRpZXNlLW1vZWJlbC13b2xsZW4tc2llLXVtYXJtZW4tZHBhLnVybi1uZXdzbWwtZHBhLWNvbS0yMDA5MDEwMS0yMjA2MDgtOTktNTg0OTU30gEA",
+					"news_publication_date": "Wed, 08 Jun 2022 10:02:39 GMT",
+					"news_description": "<a href=\"https://www.sueddeutsche.de/wirtschaft/immobilien-pandemie-design-fuers-herz-diese-moebel-wollen-sie-umarmen-dpa.urn-newsml-dpa-com-20090101-220608-99-584957\" target=\"_blank\">Pandemie-Design fürs Herz: Diese Möbel wollen Sie umarmen</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Süddeutsche Zeitung - SZ.de</font>",
+					"news_source": "Süddeutsche Zeitung - SZ.de",
+					"news_search_keyword": "Wirtschaft",
+					"news_search_url": "https://news.google.com/rss/search?q=Wirtschaft+after:2022-06-08+before:2022-06-09&ceid=DE:de&hl=de&gl=DE",
+					"title": "pandemie design fürs herz diese möbel wollen sie umarmen süddeutsche zeitung sz de",
+					"confidence_level": 0.04333333333333333
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "q0LnV4EBg3Pfh2aM1xzR",
+				"_score": 1.0,
+				"_ignored": [
+					"unique_rb_news.keyword",
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMitQFodHRwczovL3d3dy5zcGllZ2VsLmRlL3BvbGl0aWsvZGV1dHNjaGxhbmQvYWxicmVjaHQtYnJvZW1tZS16dS1jb3JvbmEtZGVyLWJlcmxpbmVyLWtyaXNlbm1hbmFnZXItdWViZXItZGllLWdlZmFocmVuLWVpbmVyLW5ldWVuLXBhbmRlbWllLXdlbGxlLWEtMWQ1YTI4ZTAtMDIzOS00Yjg3LTlmMGItODQ1ZjBlZTI0Y2Vi0gEA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.spiegel.de/politik/deutschland/albrecht-broemme-zu-corona-der-berliner-krisenmanager-ueber-die-gefahren-einer-neuen-pandemie-welle-a-1d5a28e0-0239-4b87-9f0b-845f0ee24ceb",
+					"news_id": "CBMitQFodHRwczovL3d3dy5zcGllZ2VsLmRlL3BvbGl0aWsvZGV1dHNjaGxhbmQvYWxicmVjaHQtYnJvZW1tZS16dS1jb3JvbmEtZGVyLWJlcmxpbmVyLWtyaXNlbm1hbmFnZXItdWViZXItZGllLWdlZmFocmVuLWVpbmVyLW5ldWVuLXBhbmRlbWllLXdlbGxlLWEtMWQ1YTI4ZTAtMDIzOS00Yjg3LTlmMGItODQ1ZjBlZTI0Y2Vi0gEA",
+					"news_publication_date": "Wed, 08 Jun 2022 22:31:28 GMT",
+					"news_description": "<a href=\"https://www.spiegel.de/politik/deutschland/albrecht-broemme-zu-corona-der-berliner-krisenmanager-ueber-die-gefahren-einer-neuen-pandemie-welle-a-1d5a28e0-0239-4b87-9f0b-845f0ee24ceb\" target=\"_blank\">»Corona wird von der Politik verdrängt«: Läuft Deutschland blind in die nächste Pandemiewelle?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DER SPIEGEL</font>",
+					"news_source": "DER SPIEGEL",
+					"news_search_keyword": "Politik",
+					"news_search_url": "https://news.google.com/rss/search?q=Politik+after:2022-06-08+before:2022-06-09&ceid=DE:de&hl=de&gl=DE",
+					"title": " corona wird von der politik verdrängt läuft deutschland blind in die nächste pandemiewelle der spiegel",
+					"confidence_level": 0.05555555555555555
+				}
+			},
+			{
+				"_index": "integrated-dataset",
+				"_type": "_doc",
+				"_id": "rELnV4EBg3Pfh2aM2Bx9",
+				"_score": 1.0,
+				"_ignored": [
+					"news_description.keyword"
+				],
+				"_source": {
+					"unique_rb_news": "be_557799CBMihgFodHRwczovL3d3dy5wdWxzMjQuYXQvdmlkZW8vcHVscy0yNC1kaWUtcG9saXRpay1pbnNpZGVyL2RpZS1wb2xpdGlrLWluc2lkZXItcmVrb3JkdGV1ZXJ1bmctd2VtLXNvbGwtd2llLWdlaG9sZmVuLXdlcmRlbi92LWNrazY5ZTZwMmNwNdIBAA",
+					"rb_company": "lendivy gmbh",
+					"event_type": "create",
+					"event_date": "13.11.2019",
+					"status": "STATUS_ACTIVE",
+					"rb_id": "be_557799",
+					"news_link": "https://www.puls24.at/video/puls-24-die-politik-insider/die-politik-insider-rekordteuerung-wem-soll-wie-geholfen-werden/v-ckk69e6p2cp5",
+					"news_id": "CBMihgFodHRwczovL3d3dy5wdWxzMjQuYXQvdmlkZW8vcHVscy0yNC1kaWUtcG9saXRpay1pbnNpZGVyL2RpZS1wb2xpdGlrLWluc2lkZXItcmVrb3JkdGV1ZXJ1bmctd2VtLXNvbGwtd2llLWdlaG9sZmVuLXdlcmRlbi92LWNrazY5ZTZwMmNwNdIBAA",
+					"news_publication_date": "Wed, 08 Jun 2022 15:38:56 GMT",
+					"news_description": "<a href=\"https://www.puls24.at/video/puls-24-die-politik-insider/die-politik-insider-rekordteuerung-wem-soll-wie-geholfen-werden/v-ckk69e6p2cp5\" target=\"_blank\">Die Politik-Insider: Rekordteuerung - Wem soll wie geholfen werden?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">puls24</font>",
+					"news_source": "puls24",
+					"news_search_keyword": "Politik",
+					"news_search_url": "https://news.google.com/rss/search?q=Politik+after:2022-06-08+before:2022-06-09&ceid=DE:de&hl=de&gl=DE",
+					"title": "die politik insider rekordteuerung wem soll wie geholfen werden puls24",
+					"confidence_level": 0.04166666666666666
+				}
+			}
+		]
+	}
+}
