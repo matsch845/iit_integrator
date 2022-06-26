@@ -29,6 +29,10 @@ def find_company(inp):
     start = inp.find(":")
     end = inp.find(",")
     company = inp[start+2:end]
+
+    if len(company) == 0:
+        company = inp[0:inp.find(",")]
+
     return company
 
 
@@ -60,7 +64,7 @@ def start_matching(df_news, df_rb):
 
         # for u in range(len(df_news)): for testing only 100:
         # CHANGE THIS FOR PR
-        for u in range(1000):
+        for u in range(len(df_news)):
             news_link = df_news["link"][u]
             news_id = df_news["id"][u]
             news_publication_date = df_news["publication_date"][u]
@@ -70,7 +74,6 @@ def start_matching(df_news, df_rb):
             news_search_url = df_news["search_url"][u]
             title = df_news["title"][u]
             title = clean_it(title)
-            print(title)
 
             check_grams = []
             n = n_gram_amount
@@ -83,6 +86,8 @@ def start_matching(df_news, df_rb):
             for item in check_grams:
                 check.append(' '.join(item))
 
+            print(title)
+            print(company)
             print(check)
 
             threshold_set = 75
@@ -98,7 +103,7 @@ def start_matching(df_news, df_rb):
                     print("'" + item + "' matched with: '" + company + "'")
 
                     confidence_level = (1/leven_dist * (distance_set + distance_sort)) / (200)
-                    
+
                     es.index(
                         index='integrated-dataset',
                         body={
