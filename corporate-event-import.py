@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-from elasticsearch7 import Elasticsearch
+from elasticsearch import Elasticsearch
 
 es = Elasticsearch(['http://localhost:9200'])
 

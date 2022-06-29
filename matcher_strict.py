@@ -26,15 +26,15 @@ def write_json(new_data, filename='out_data.json'):
         json.dump(file_data, file, indent=4)
 
 
-def find_company(inp):
-    start = inp.find(":")
-    end = inp.find(",")
-    company = inp[start + 2:end]
+def find_zipcode(s):
+    zipcode = 14482
 
-    if (len(company) == 0):
-        company = inp[0:inp.find(",")]
+    try:
+        zipcode = re.findall(r"\D(\d{5})\D", " " + s + " ")[1]
+    except:
+        print("zipcode not found")
 
-    return company
+    return zipcode
 
 
 def clean_it(inp):
@@ -50,7 +50,7 @@ create_json("company_news", "out_data.json")
 # carful this creates new emtpy json
 
 
-def start_matching(df_news):
+def start_matching(df_news, df_companies):
     # this is expensive matching:
 
     # for u in range(len(df_news)): for testing only 100:
@@ -72,6 +72,12 @@ def start_matching(df_news):
         rb_id = split[1]
         company = split[0]
         company = clean_it(company)
+
+        company_filter = df_companies['id'] == rb_id
+        c = df_companies[company_filter]
+
+        zipcode = find_zipcode(c['information'].iloc[0])
+
         print(company)
         n_gram_amount = len(company.split())
         print(n_gram_amount)
@@ -89,29 +95,30 @@ def start_matching(df_news):
 
         print(check)
 
+        confidence_level = 10000
+
         for item in check:
-            distance_set = fuzz.token_set_ratio(item, company)
-            distance_sort = fuzz.token_sort_ratio(item, company)
             leven_dist = levenshtein_distance(item, company)
-            print(distance_set, distance_sort, leven_dist)
 
-            print("'" + item + "' matched with: '" + company + "'")
+            if leven_dist < confidence_level:
+                confidence_level = leven_dist
 
-            confidence_level = (1 / leven_dist * (distance_set + distance_sort)) / (200)
+        print(str(confidence_level) + "   " + company + "   " + title)
 
-            es.index(
-                index='integrated-dataset',
-                body={
-                    "unique_rb_news": str(str(rb_id) + str(news_id)),
-                    "rb_company": company,
-                    "rb_id": rb_id,
-                    "news_link": news_link,
-                    "news_id": news_id,
-                    "news_publication_date": news_publication_date,
-                    "news_description": news_description,
-                    "news_source": news_source,
-                    "news_search_keyword": news_search_keyword,
-                    "news_search_url": news_search_url,
-                    "title": title,
-                    "confidence_level": confidence_level
-                })
+        es.index(
+            index='integrated-dataset',
+            body={
+                "unique_rb_news": str(str(rb_id) + str(news_id)),
+                "rb_company": company,
+                "rb_id": rb_id,
+                "news_link": news_link,
+                "news_id": news_id,
+                "news_publication_date": news_publication_date,
+                "news_description": news_description,
+                "news_source": news_source,
+                "news_search_keyword": news_search_keyword,
+                "news_search_url": news_search_url,
+                "title": title,
+                "confidence_level": confidence_level,
+                "zipcode": zipcode
+            })
