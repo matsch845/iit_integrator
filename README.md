@@ -6,9 +6,10 @@
 
 ## General Architecture and Functionality
 
-After importing the corporate-events-dump, main.py assings the confidence score to our google news data containig the company from the RB dat (integrator "matcher_strict")
+After importing the corporate-events-dump, run https://github.com/matsch845/iit_news_crawler for crawling google news via the companies.
+main.py assings the confidence score to our google news data containig the company from the RB dat (integrator "matcher_strict").
 
-The integrator works this way:
+So the integration works this way:
 1. It takes the information of RB crawl and finds the company in the string via regex. (depending on where the company is written)
 2. Use the cleaned company string as keyword to crawl google news
 3. Check the returned news for actually containing the company and how confident we are in the news actually containing the company.
