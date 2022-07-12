@@ -38,6 +38,8 @@ def get_data_from_elastic(table_name):
 def get_statistics():
     df_integrated = get_data_from_elastic("integrated-dataset")
 
+    df_integrated.to_csv("integrated_dataset.csv", sep=';', header=True)
+
     filter = df_integrated["confidence_level"] < 3
 
     print("Integrations with confidence_level < 3: " + str(len(df_integrated[filter])))
